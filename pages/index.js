@@ -133,6 +133,7 @@ const Home = () => (
         .main {
           width: 100%;
         }
+
         body {
           letter-spacing: 1px;
         }
@@ -143,6 +144,24 @@ const Home = () => (
 
         .sub-Main-title {
           font-size: 1.5rem;
+        }
+
+        .sub-title {
+          font-size: 0.8rem;
+        }
+
+        .sub-content {
+          padding: 5% 0px;
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: ${'800px'}) {
+        .Main-title {
+          font-size: 1rem;
+        }
+
+        .sub-Main-title {
+          font-size: 1.3rem;
         }
 
         .sub-title {

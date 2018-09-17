@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './atoms/Button';
-import proj1 from '../static/proj1.png';
+import proj1 from '../static/proj1new.png';
 import proj2 from '../static/proj2.png';
 import proj3 from '../static/proj3.png';
 import proj4 from '../static/proj4.png';
@@ -27,7 +27,7 @@ const Projects = () => (
       <div className="col centered">
         <div className="row" style={{ justifyContent: 'space-between' }}>
           <div className="col" style={{ width: '510px' }}>
-            <img src={proj1} alt="project photo" className="proj-pic" />
+            <img src={proj2} alt="project photo" className="proj-pic" />
             <h2 className="proj-title">PROJECT TITLE GOES HERE</h2>
             <p className="proj-description">
               Curabitur blandit tempus porttitor. Sed posuereconsectetur est at
@@ -35,7 +35,7 @@ const Projects = () => (
             </p>
           </div>
           <div className="col" style={{ width: '510px' }}>
-            <img src={proj2} alt="project photo" className="proj-pic" />
+            <img src={proj1} alt="project photo" className="proj-pic" />
             <h2 className="proj-title">PROJECT TITLE GOES HERE</h2>
             <p className="proj-description">
               Curabitur blandit tempus porttitor. Sed posuereconsectetur est at
@@ -66,8 +66,10 @@ const Projects = () => (
     </div>
     <style jsx>{`
       .proj-pic {
-        width: 510px;
-        height: 325px;
+         {
+          /* width: 510px;
+        height: 325px; */
+        }
         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }

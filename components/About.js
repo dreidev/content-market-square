@@ -66,6 +66,12 @@ const About = () => (
             width: 100%;
           }
         }
+        @media screen and (max-width: 500px) {
+          .about {
+            font-size: 15px;
+            width: 100%;
+          }
+        }
       `}</style>
     </div>
   </div>
