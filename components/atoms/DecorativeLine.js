@@ -40,6 +40,11 @@ const DecorativeLine = ({ id, reversed, width }) => (
         #${id} {
           width: ${width};
         }
+
+        .circle {
+          width: 3px;
+          height: 3px;
+        }
       }
     `}</style>
   </>
