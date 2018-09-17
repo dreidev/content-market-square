@@ -1,28 +1,17 @@
 import React from 'react';
+import DecorativeLine from './atoms/DecorativeLine';
 
 const ContactUS = () => (
   <div className="col bordered">
     <div className="sub-content">
-      <div className="row">
-        <svg viewBox="0 0 1000 100" fill="none" style={{ width: '100%' }}>
-          <text x="0" y="20" fontSize="30px" fill="#3e3e3e" fontWeight="bold">
-            DROP
-          </text>
-          <path
-            stroke="#3E3E3E"
-            strokeWidth="2"
-            fill="none"
-            d="M90 13 L155 13 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0 "
-          />
-          <text x="0" y="55" fontSize="35px" fill="#46C0C6" fontWeight="900">
-            US A LINE
-          </text>
-        </svg>
-      </div>
-
       <div className="col">
+        <div className="text-row" style={{ height: '20px' }}>
+          <b className="Main-title">Drop</b>
+          <DecorativeLine width="12%" id="services_line1" />
+        </div>
+        <b className="sub-Main-title">US A LINE</b>
         <div className="row">
-          <div className="col">
+          <div className="col info-col">
             <svg viewBox="0 0 500 40" fill="none" style={{ width: '100%' }}>
               <text
                 x="0"
@@ -41,7 +30,7 @@ const ContactUS = () => (
             </svg>
             <p className="info">mkim@ballast-inc.com</p>
           </div>
-          <div className="col">
+          <div className="col info-col">
             <svg viewBox="0 0 500 40" fill="none" style={{ width: '100%' }}>
               <text
                 x="0"
@@ -62,7 +51,7 @@ const ContactUS = () => (
           </div>
         </div>
         <div className="row">
-          <div className="col">
+          <div className="col info-col">
             <svg viewBox="0 0 500 40" fill="none" style={{ width: '100%' }}>
               <text
                 x="0"
@@ -84,7 +73,7 @@ const ContactUS = () => (
               Bongeunsa, Ltd I & C ballasts.
             </p>
           </div>
-          <div className="col" />
+          <div className="col info-col" />
         </div>
         <div className="row" />
       </div>
@@ -95,6 +84,12 @@ const ContactUS = () => (
           font-size: 20px;
           color: #6c6e6d;
           margin: 0px 0px 40px 0px;
+        }
+
+        @media screen and (max-width: ${'1000px'}) {
+          .info-col {
+            align-items: flex-start;
+          }
         }
       `}</style>
     </div>
